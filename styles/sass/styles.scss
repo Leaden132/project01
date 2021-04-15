@@ -1,0 +1,51 @@
+//include all of our partial scss files (so that their SCSS is compiled
+@import "partials/setup";
+@import "partials/variable";
+@import "partials/mixins";
+@import "partials/typography";
+
+
+
+body {
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    background-image:url(../assets/header-1.jpg);
+    background-size:cover;
+}
+
+
+a {
+    color: $primaryColor;
+    font-family: $mainFont;
+}
+
+section {
+    background: $primaryColor;
+}
+
+// .gallery {
+//     border: 1px solid cornflowerblue;
+// }
+
+// .gallery li {
+//     display: inline-block;
+
+// }
+
+// .gallery li a:hover {
+//     color:thistle;
+// }
+
+.gallery {
+    border: 1px solid cornflowerblue;
+    li {
+        display:inline-block;
+    
+    a {
+        color: $secondaryColor;
+        &:hover {
+            color:lighten($secondaryColor, 70);
+            }
+        }
+    }
+}

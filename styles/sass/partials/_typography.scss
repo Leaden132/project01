@@ -1,0 +1,9 @@
+html {
+    font-size: 125%;
+    color: $primaryColor;
+}
+
+
+h1 {
+    @include fontStyles( 40px, 36px, thistle);
+}

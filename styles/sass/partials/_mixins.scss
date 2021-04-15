@@ -1,0 +1,17 @@
+@mixin fontStyles($fontSize, $lineHeight, $fontColor: cornflowerblue/*to set the default value*/) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $fontColor;
+}
+
+// h1 {
+//     font-size: 4rem;
+//     line-height: 3.5rem;
+//     color: thistle;
+// }
+
+// h2 {
+//     font-size: 3rem;
+//     line-height: 2.5rem;
+//     color: hotpink;
+// }
