@@ -4,8 +4,9 @@
     height:700px;
 }
 
-.blog h1 {
+.blog h2 {
     margin-top:180px;
+    text-align:center;
 }
 
 .containerBlog {
@@ -99,6 +100,7 @@ h5{
 .blogContainer {
     display:flex;
     margin-bottom:100px;
+    width:800px;
 }
 
 .blogContainer img {
@@ -113,22 +115,28 @@ h5{
     flex-direction:column;
 }
 
-        form {
+    form {
         padding-top:50px;
         max-width: 900px;
         width: 90%;
         margin: 0 auto;
     }
 
-    form input,
-    form textarea {
-        border: 2px solid mediumturquoise;
-        background-color:#222428;
+    form input {
+        border:none;
+        border-bottom: 2px solid $seaGreen;
+        background-color:$ice;
+        height:50px;
+    }
 
+    form textarea {
+        border: 2px solid $seaGreen;
+        background-color:$ice;
     }
 
     ::placeholder {
-        color:white;
+        color:black;
+        font-size:1.5rem;
     }
 
     .short {
@@ -138,17 +146,25 @@ h5{
     }
     
     .short input {
-        width:460px;
+        width:390px;
+    }
+    
+    .long textarea {
+        width:800px;
     }
 
     button {
-        background: #00C6FF;
-        color: white;
+        background: $seaGreen;
+        color: $black;
+        font-family:$mainFont;
+        text-transform: uppercase;
         padding: 10px;
         border: none;
         align-self: center;
         margin-top: 10px;
+        width:800px;
         cursor:pointer;
+        margin-bottom:100px;
     }
 
     .contactUs {
