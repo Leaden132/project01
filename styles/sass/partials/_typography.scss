@@ -4,7 +4,27 @@ html {
     color:black;
 }
 
+p {
+    font-family:$secondaryFont;
+    @include fontStyles(20px, 32px);
+}
 
 h1 {
-    @include fontStyles(138px, 92px);
+    font-size:138px;
+    text-transform:uppercase;
+}
+
+h2 {
+    @include fontStyles(80px, 92px);
+    text-transform:uppercase;
+}
+
+h3 {
+    font-size:42px;
+    text-transform:uppercase;
+}
+
+h4 {
+    font-size:32px;
+    text-transform:uppercase;
 }
