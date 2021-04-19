@@ -1,9 +1,10 @@
 html {
-    font-size: 125%;
-    color: $primaryColor;
+    font-size: 62.5%;
+    font-family:$mainFont;
+    color:black;
 }
 
 
 h1 {
-    @include fontStyles( 40px, 36px, thistle);
+    @include fontStyles(138px, 92px);
 }

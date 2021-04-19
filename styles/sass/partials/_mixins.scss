@@ -1,7 +1,7 @@
-@mixin fontStyles($fontSize, $lineHeight, $fontColor: cornflowerblue/*to set the default value*/) {
+@mixin fontStyles($fontSize, $lineHeight) {
     font-size: $fontSize;
     line-height: $lineHeight;
-    color: $fontColor;
+    
 }
 
 // h1 {
