@@ -21,8 +21,7 @@ body {
 header {
     background-image: url(../assets/header-image.jpg);
     background-size:cover;
-    height:1000px;
-
+    height:755px;
 }
 
 .headerContainer {
@@ -58,19 +57,22 @@ nav a:hover {
 
 h1 {
     text-align:center;
-    margin-top:700px;
+    margin-top:500px;
     z-index:10;
 }
 
 .between {
-    min-height:700px;
-    width: 40vw;
     position:absolute;
     right:0;
-    bottom:-450px;
+    top:200px;
     border-bottom: 50px solid $canary;
     border-left: 50px solid $canary;
     border-top: 50px solid $canary;
+}
+
+.between img {
+    height:590px;
+    width: 630px;
 }
 
 .section1 {
@@ -94,7 +96,7 @@ h1 {
     margin-top:50px;
 }
 
-.section2 {
+.gridContainer {
     background-color:$white;
     display:grid;
     grid-template-rows: 1fr 1fr;
@@ -102,9 +104,31 @@ h1 {
     gap: 40px 200px;
 }
 
+.gridItem,
+.empty {
+    min-width:40%;
+}
+
+.gridItem1 {
+    position:relative;
+}
+
 .gridItem1 img{
-    box-shadow: 7rem 1rem 0rem 1rem $canary;
-    
+    box-shadow: 3rem 3rem 0rem 0rem $canary;
+    position:absolute;
+    left:-16%;
+    top:-10%;
+}
+
+.gridItem4 {
+    position:relative;
+}
+
+.gridItem4 img {
+    box-shadow: -3rem 3rem 0rem 0rem $canary;
+    position:absolute;
+    right:-16%;
+    bottom:-10%;
 }
 
 .gridItem3 {
@@ -132,7 +156,13 @@ h1 {
     height:50px;
     margin: 0;
     margin-top:30px;
+    margin-bottom:50px;
     text-align:right;
+}
+
+.section2 h4 {
+    margin-top:50px;
+    margin-bottom:30px;
 }
 
 // third section
@@ -150,7 +180,9 @@ h1 {
 }
 
 .section3 h4 {
-    margin-bottom:0;
+    margin-bottom:25px;
+    margin-top:75px;
+    padding-top:50px;
 }
 
 .fas {
@@ -159,7 +191,7 @@ h1 {
     height:50px;
     min-width:50px;
     border-radius:50%;
-    margin-top:35px;
+    margin-top:120px;
     margin-right:15px;
 }
 
@@ -191,9 +223,17 @@ h1 {
 .section3 .gridItem {
     display:flex;
 }
+
+.gridItem8 {
+    margin-bottom:150px;
+}
+
 .flexContainer {
     display:flex;
     flex-direction:column;
+    min-width:500px;
+    height:200px;
+    margin-bottom:30px;
 }
 
 
@@ -202,8 +242,9 @@ h1 {
 
 
 .section4 {
-    min-height:500px;
-    background-image:url(../assets/banner.jpg)
+    height:500px;
+    background-image:url(../assets/banner.jpg);
+    background-size:cover;
 }
 
 
@@ -212,11 +253,12 @@ h1 {
 
 .section5 {
     background-color:$ice;
-    min-height:420px;
+    height:500px;
 }
 
 .section5 h4 {
     margin-bottom:20px;
+    margin-top:100px;
 }
 
 .container5 {
@@ -225,7 +267,7 @@ h1 {
 }
 
 .section5 img {
-    margin-top:50px;
+    margin-top:100px;
     height:300px;
     width:300px;
     box-shadow: 2rem 2rem 0rem 0.5rem $canary;
