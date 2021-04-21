@@ -7,6 +7,8 @@
 @import "partials/contact";
 
 
+
+
 body {
     background-color: $white;
 }
@@ -103,7 +105,7 @@ h1 {
     display:grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 40px 200px;
+    gap: 0 200px;
 }
 
 
@@ -171,6 +173,7 @@ h1 {
     grid-template-rows: 40% 40%;
     grid-template-columns: 40% 40%;
     gap: 20px;
+    min-height:70rem;
 }
 
 .section3 .gridItem {
@@ -309,9 +312,6 @@ footer p {
     text-align:center;
 }
 
-@media (max-width: 1200px) {
-
-}
 
 @media (max-width: 940px) {
 
@@ -418,6 +418,13 @@ footer p {
 
 }
 
+
+@media (max-width: 870px) {
+    .section5 {
+        height:75rem;
+    }
+}
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
@@ -452,7 +459,7 @@ footer p {
 //section 5
 
 .section5 {
-    min-height:73rem;
+    min-height:100rem;
 }
 }
 
@@ -460,17 +467,17 @@ footer p {
 
 /* Landscape phones and down */
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
 
 
 .wrapper {
-    max-width: 480px;
+    max-width: 680px;
     width: 95%;
-    margin: 0 auto;
+    margin:0;
 }
 
 .mainHeader {
-    width:460px;
+    width:100%;
     background-position:-1rem 0rem;
     background-size:110rem 80rem;
     background-repeat:no-repeat;
@@ -505,11 +512,13 @@ footer p {
 
 //section 2
 .section2 {
-    height:132rem;
+    height:160rem;
 }
 
 .gridContainer{
     padding-top:3rem;
+    margin-left:2vw;
+    gap:0;
 }
 .gridItem1 {
     position:static;
@@ -563,7 +572,7 @@ footer p {
 
 .section2 h4{
     width:100%;
-    margin-top:0;
+    margin-top:2rem;
     text-align:center;
 }
 
@@ -632,7 +641,7 @@ footer p {
 
 .section5 img {
     margin-top:50px;
-    margin-left:72px;
+    margin-left:28vw;
     height:300px;
     width:300px;
     box-shadow: none;
@@ -641,7 +650,7 @@ footer p {
 .section5 .container {
     display:flex;
     flex-direction:column;
-    margin-left:0;
+    margin-left:5vw;
     text-align:center;
 }
 
@@ -672,8 +681,10 @@ footer p {
 
 .container6 {
     margin:0;
+    margin-left:1vw;
     padding-top:5rem;
-    
+    width:95vw;
 }
+
 
 }

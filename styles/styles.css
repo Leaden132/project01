@@ -437,20 +437,20 @@ h5 {
           flex-direction: column;
 }
 
-form {
+.comment {
   padding-top: 50px;
   width: 90%;
   margin: 0;
 }
 
-form input {
+.comment input {
   border: none;
   border-bottom: 2px solid #4CEEA7;
   background-color: #EFFDF3;
   height: 50px;
 }
 
-form textarea {
+.comment textarea {
   border: 2px solid #4CEEA7;
   background-color: #EFFDF3;
 }
@@ -623,7 +623,7 @@ button {
   background-image: url(../assets/contact-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 560px;
+  height: 56rem;
 }
 
 .mainContact {
@@ -651,36 +651,78 @@ button {
 }
 
 .contactForm {
-  height: 50%;
+  height: 38rem;
+  width: 50%;
   background-color: #FAFAFA;
   position: absolute;
-  top: 40%;
+  top: 40rem;
   right: 5%;
   -webkit-box-shadow: -4rem 4rem 0 -0.5rem #FDFA69;
           box-shadow: -4rem 4rem 0 -0.5rem #FDFA69;
 }
 
 .contactForm input {
+  border: none;
+  border-bottom: 2px solid #4CEEA7;
+  height: 50px;
   margin-top: 50px;
   margin-left: 40px;
   margin-bottom: 30px;
-  width: 360px;
+  width: 20.3vw;
   background-color: #FAFAFA;
 }
 
 .contactForm textarea {
+  border: 2px solid #4CEEA7;
+  background-color: #EFFDF3;
   margin-left: 40px;
-  height: 200px;
-  width: 785px;
+  height: 25%;
+  width: 44vw;
   background-color: #FAFAFA;
 }
 
 .contactForm button {
   margin-top: 30px;
   margin-left: 40px;
-  width: 785px;
+  width: 44vw;
 }
 
+/* Landscape phone to portrait tablet */
+@media (max-width: 965px) {
+  .mainContact {
+    height: 1000px;
+  }
+  .sideContact {
+    width: 100%;
+    padding-top: 500px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .contactForm {
+    top: 60rem;
+    width: 80vw;
+  }
+  .contactForm input {
+    height: 5rem;
+    margin-top: 5rem;
+    margin-left: 3vw;
+    margin-bottom: 30px;
+    width: 34vw;
+    background-color: #FAFAFA;
+  }
+  .contactForm textarea {
+    margin-left: 2.5vw;
+    height: 25%;
+    width: 75vw;
+  }
+  .contactForm button {
+    margin-top: 3rem;
+    margin-left: 2.5vw;
+    width: 75vw;
+  }
+}
+
+/* Landscape phones and down */
 body {
   background-color: #FAFAFA;
 }
@@ -787,7 +829,7 @@ h1 {
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 40px 200px;
+  gap: 0 200px;
 }
 
 .gridItem1 {
@@ -858,6 +900,7 @@ h1 {
   -ms-grid-columns: 40% 40%;
       grid-template-columns: 40% 40%;
   gap: 20px;
+  min-height: 70rem;
 }
 
 .section3 .gridItem {
@@ -1089,6 +1132,12 @@ footer p {
   }
 }
 
+@media (max-width: 870px) {
+  .section5 {
+    height: 75rem;
+  }
+}
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .wrapper {
@@ -1112,19 +1161,19 @@ footer p {
     top: 240%;
   }
   .section5 {
-    min-height: 73rem;
+    min-height: 100rem;
   }
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .wrapper {
-    max-width: 480px;
+    max-width: 680px;
     width: 95%;
-    margin: 0 auto;
+    margin: 0;
   }
   .mainHeader {
-    width: 460px;
+    width: 100%;
     background-position: -1rem 0rem;
     background-size: 110rem 80rem;
     background-repeat: no-repeat;
@@ -1148,10 +1197,12 @@ footer p {
     padding-bottom: 10rem;
   }
   .section2 {
-    height: 132rem;
+    height: 160rem;
   }
   .gridContainer {
     padding-top: 3rem;
+    margin-left: 2vw;
+    gap: 0;
   }
   .gridItem1 {
     position: static;
@@ -1199,7 +1250,7 @@ footer p {
   }
   .section2 h4 {
     width: 100%;
-    margin-top: 0;
+    margin-top: 2rem;
     text-align: center;
   }
   .section2 .more {
@@ -1256,7 +1307,7 @@ footer p {
   }
   .section5 img {
     margin-top: 50px;
-    margin-left: 72px;
+    margin-left: 28vw;
     height: 300px;
     width: 300px;
     -webkit-box-shadow: none;
@@ -1270,7 +1321,7 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 0;
+    margin-left: 5vw;
     text-align: center;
   }
   .section5 p {
@@ -1292,6 +1343,8 @@ footer p {
   }
   .container6 {
     margin: 0;
+    margin-left: 1vw;
     padding-top: 5rem;
+    width: 95vw;
   }
 }

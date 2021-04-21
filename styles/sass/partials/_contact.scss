@@ -2,7 +2,7 @@
     background-image:url(../assets/contact-header.jpg);
     background-size:cover;
     background-repeat:no-repeat;
-    height:560px;
+    height:56rem;
 }
 
 .mainContact {
@@ -30,32 +30,87 @@
 }
 
 .contactForm {
-    height:50%;
+    height:38rem;
+    width:50%;
     background-color:$white;
     position:absolute;
-    top:40%;
+    top:40rem;
     right:5%;
     box-shadow: -4rem 4rem 0 -0.5rem $canary;
-
 }
 
 .contactForm input{
+    border:none;
+    border-bottom: 2px solid $seaGreen;
+    height:50px;
     margin-top:50px;
     margin-left: 40px;
     margin-bottom:30px;
-    width:360px;
+    width:20.3vw;
     background-color:$white;
 }
 
 .contactForm textarea{
+    border: 2px solid $seaGreen;
+    background-color:$ice;
     margin-left:40px;
-    height:200px;
-    width:785px;
+    height:25%;
+    width:44vw;
     background-color:$white;
 }
 
 .contactForm button {
     margin-top:30px;
     margin-left:40px;
-    width:785px;
+    width:44vw;
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 965px) {
+
+
+    .mainContact{
+        height:1000px;
+    }
+
+    .sideContact{
+        width:100%;
+        padding-top:500px;
+        margin-left:0;
+        text-align:center;
+    }
+
+    .contactForm {
+        top:60rem;
+        width:80vw;
+    }
+
+
+    .contactForm input{
+    height:5rem;
+    margin-top:5rem;
+    margin-left: 3vw;
+    margin-bottom:30px;
+    width:34vw;
+    background-color:$white;
+}
+
+.contactForm textarea{
+    margin-left:2.5vw;
+    height:25%;
+    width:75vw;
+}
+
+.contactForm button {
+    margin-top:3rem;
+    margin-left:2.5vw;
+    width:75vw;
+}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
 }

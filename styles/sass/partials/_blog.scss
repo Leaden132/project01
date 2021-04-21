@@ -122,21 +122,21 @@ h5{
     flex-direction:column;
 }
 
-    form {
+    .comment {
         padding-top:50px;
         // max-width: 900px;
         width: 90%;
         margin: 0;
     }
 
-    form input {
+    .comment input {
         border:none;
         border-bottom: 2px solid $seaGreen;
         background-color:$ice;
         height:50px;
     }
 
-    form textarea {
+    .comment textarea {
         border: 2px solid $seaGreen;
         background-color:$ice;
     }
