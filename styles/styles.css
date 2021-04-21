@@ -543,6 +543,80 @@ button {
   .containerBlog {
     display: unset;
   }
+  .side img {
+    display: none;
+  }
+  .postImage {
+    top: 108%;
+    left: 5%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-top: 1.5rem solid #FDFA69;
+    border-bottom: 1.5rem solid #FDFA69;
+    border-left: 1.5rem solid #FDFA69;
+    border-right: 1.5rem solid #FDFA69;
+    width: 90%;
+  }
+  .side {
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+  .sidebar {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-right: 0;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .containerBlog {
+    display: block;
+    width: 100%;
+  }
+  .mainPost {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    margin-top: 70%;
+    text-align: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .blogPost {
+    width: 100%;
+  }
+  .blogContainer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0 4rem;
+    margin-bottom: 2rem;
+  }
+  .blogContainer img {
+    width: 40vw;
+    height: 40vw;
+    margin: 0;
+    margin-top: 2rem;
+    border: 1rem solid #FDFA69;
+  }
+  .blogContainer p {
+    margin: 2rem 0;
+  }
+  .comment {
+    width: 100%;
+  }
+  .comment input {
+    width: 43vw;
+    margin-left: 11%;
+  }
+  .comment textarea,
+  .comment button {
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 
 .contact {
