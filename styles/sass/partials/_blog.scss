@@ -1,7 +1,7 @@
 .blog{
     background-image:url(../assets/blog-header.jpg);
     background-size:cover;
-    height:700px;
+    height:60vh;
 }
 
 .blog h2 {
@@ -17,7 +17,7 @@
 .blogPost {
     display:flex;
     flex-direction:column;
-
+    width:70%;
 }
 
 .sidebar li{
@@ -34,12 +34,13 @@
 }
 
 .sidebar {
-    margin-left:150px;
-    padding-top:350px;
+    margin-left:27%;
+    padding-top:60%;
     background-color:$white;
-    margin-top:130px;
-    width:320px;
+    margin-top:40%;
+    width:71%;
     margin-right:100px;
+    
 }
 
 h5{
@@ -53,13 +54,14 @@ h5{
 }
 
 .side {
-    width:33.8%;
+    width:36.3%;
+    margin-right:3.3%;
 }
 
 .side img {
     position:absolute;
-    top:800px;
-    width:450px;
+    top:80%;
+    width:31%;
 }
 
 .sidebar p {
@@ -80,31 +82,32 @@ h5{
 }
 
 .postImage {
+    width:62%;
     position:absolute;
-    top:400px;
+    top:47%;
     right:0;
     box-shadow: -4rem 4rem 0 -1rem $canary;
 }
 
 .mainPost {
-    margin-top:360px;
+    margin-top:48%;
     padding-top:50px;
     padding-left:50px;
-    padding-right:150px;
-    margin-right:25px;
+    padding-right:0;
+    margin-right:0;
     margin-left:5px;
     margin-bottom:50px;
     box-shadow: -1rem 1rem 0 0 $canary;
 }
 
-.blogPost h4 {
-    margin-bottom:50px;
+.date {
+    margin-bottom:7%;
 }
 
 .blogContainer {
     display:flex;
     margin-bottom:100px;
-    width:800px;
+    width:90%;
 }
 
 .blogContainer img {
@@ -121,9 +124,9 @@ h5{
 
     form {
         padding-top:50px;
-        max-width: 900px;
+        // max-width: 900px;
         width: 90%;
-        margin: 0 auto;
+        margin: 0;
     }
 
     form input {
@@ -150,11 +153,11 @@ h5{
     }
     
     .short input {
-        width:390px;
+        width: 26vw;
     }
     
     .long textarea {
-        width:800px;
+        width:95%;
     }
 
     button {
@@ -166,7 +169,7 @@ h5{
         border: none;
         align-self: center;
         margin-top: 10px;
-        width:800px;
+        width:95%;
         cursor:pointer;
         margin-bottom:100px;
     }
@@ -174,3 +177,24 @@ h5{
     .contactUs {
         flex-direction:column;
     }
+
+
+@media (max-width: 1345px) {
+
+
+}
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
