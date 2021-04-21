@@ -35,7 +35,7 @@
 
 .sidebar {
     margin-left:27%;
-    padding-top:60%;
+    padding-top:70%;
     background-color:$white;
     margin-top:40%;
     width:71%;
@@ -90,7 +90,7 @@ h5{
 }
 
 .mainPost {
-    margin-top:48%;
+    margin-top:58%;
     padding-top:50px;
     padding-left:50px;
     padding-right:0;
@@ -180,21 +180,44 @@ h5{
 
 
 @media (max-width: 1345px) {
-
+    .sidebar {
+    padding-top:85%;
+}
 
 }
 
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-
+    .sidebar {
+    padding-top:95%;
+}
 
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 680px) {
+
+
+    .side {
+        margin-right:1rem;
+    }
+
+    .mainPost{
+        margin-left:0;
+        padding-left:1rem;
+    }
+
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    .containerBlog{
+        display:unset;
+    }
+
+
+    
+
+
 }
