@@ -7,17 +7,28 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/12a501f4a0.js" crossorigin="anonymous"></script>
+
     <title>Blog</title>
 </head>
 <body>
     <header class="blog">
         <div class=" headerContainer">
             <nav>
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contact</a></li>
+                <ul class="normalMenu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <label for="toggle" class="mobile"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" class="mobile" id="toggle" name="toggle" />
+                <ul class="burgerMenu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
             <h2>Blog</h2>

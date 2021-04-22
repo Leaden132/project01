@@ -514,111 +514,6 @@ button {
           flex-direction: column;
 }
 
-@media (max-width: 1345px) {
-  .sidebar {
-    padding-top: 85%;
-  }
-}
-
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-  .sidebar {
-    padding-top: 95%;
-  }
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 680px) {
-  .side {
-    margin-right: 1rem;
-  }
-  .mainPost {
-    margin-left: 0;
-    padding-left: 1rem;
-  }
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-  .containerBlog {
-    display: unset;
-  }
-  .side img {
-    display: none;
-  }
-  .postImage {
-    top: 108%;
-    left: 5%;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border-top: 1.5rem solid #FDFA69;
-    border-bottom: 1.5rem solid #FDFA69;
-    border-left: 1.5rem solid #FDFA69;
-    border-right: 1.5rem solid #FDFA69;
-    width: 90%;
-  }
-  .side {
-    margin-right: 0;
-    margin-left: 0;
-    padding-top: 0;
-    width: 100%;
-  }
-  .sidebar {
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 0;
-    padding-right: 0;
-    margin-top: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .containerBlog {
-    display: block;
-    width: 100%;
-  }
-  .mainPost {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    width: 100%;
-    margin-top: 70%;
-    text-align: center;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .blogPost {
-    width: 100%;
-  }
-  .blogContainer {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0 4rem;
-    margin-bottom: 2rem;
-  }
-  .blogContainer img {
-    width: 40vw;
-    height: 40vw;
-    margin: 0;
-    margin-top: 2rem;
-    border: 1rem solid #FDFA69;
-  }
-  .blogContainer p {
-    margin: 2rem 0;
-  }
-  .comment {
-    width: 100%;
-  }
-  .comment input {
-    width: 43vw;
-    margin-left: 11%;
-  }
-  .comment textarea,
-  .comment button {
-    width: 90%;
-    margin-left: 5%;
-  }
-}
-
 .contact {
   background-image: url(../assets/contact-header.jpg);
   background-size: cover;
@@ -687,42 +582,6 @@ button {
   width: 44vw;
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 965px) {
-  .mainContact {
-    height: 1000px;
-  }
-  .sideContact {
-    width: 100%;
-    padding-top: 500px;
-    margin-left: 0;
-    text-align: center;
-  }
-  .contactForm {
-    top: 60rem;
-    width: 80vw;
-  }
-  .contactForm input {
-    height: 5rem;
-    margin-top: 5rem;
-    margin-left: 3vw;
-    margin-bottom: 30px;
-    width: 34vw;
-    background-color: #FAFAFA;
-  }
-  .contactForm textarea {
-    margin-left: 2.5vw;
-    height: 25%;
-    width: 75vw;
-  }
-  .contactForm button {
-    margin-top: 3rem;
-    margin-left: 2.5vw;
-    width: 75vw;
-  }
-}
-
-/* Landscape phones and down */
 body {
   background-color: #FAFAFA;
 }
@@ -749,11 +608,8 @@ header {
           flex-direction: column;
 }
 
-nav ul {
+.normalMenu {
   margin-top: 30px;
-}
-
-nav ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -763,7 +619,7 @@ nav ul {
           justify-content: right;
 }
 
-ul a {
+.normalMenu a {
   margin: 0 20px;
   text-decoration: none;
   color: black;
@@ -773,8 +629,13 @@ ul a {
   text-transform: uppercase;
 }
 
-nav a:hover {
+.normalMenu a:hover {
   border-bottom: 3px solid #4CEEA7;
+}
+
+.burgerMenu,
+.mobile {
+  display: none;
 }
 
 h1 {
@@ -1045,6 +906,58 @@ footer p {
   text-align: center;
 }
 
+.about {
+  background-image: url(../assets/place-corgi.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.about h1 {
+  margin-top: 0;
+}
+
+@media (max-width: 1345px) {
+  .sidebar {
+    padding-top: 85%;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 965px) {
+  .mainContact {
+    height: 1000px;
+  }
+  .sideContact {
+    width: 100%;
+    padding-top: 500px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .contactForm {
+    top: 60rem;
+    width: 80vw;
+  }
+  .contactForm input {
+    height: 5rem;
+    margin-top: 5rem;
+    margin-left: 3vw;
+    margin-bottom: 30px;
+    width: 34vw;
+    background-color: #FAFAFA;
+  }
+  .contactForm textarea {
+    margin-left: 2.5vw;
+    height: 25%;
+    width: 75vw;
+  }
+  .contactForm button {
+    margin-top: 3rem;
+    margin-left: 2.5vw;
+    width: 75vw;
+  }
+}
+
+/* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .wrapper {
     max-width: 900px;
@@ -1130,6 +1043,9 @@ footer p {
   .section5 {
     min-height: 60rem;
   }
+  .sidebar {
+    padding-top: 95%;
+  }
 }
 
 @media (max-width: 870px) {
@@ -1165,12 +1081,62 @@ footer p {
   }
 }
 
-/* Landscape phones and down */
 @media (max-width: 680px) {
   .wrapper {
     max-width: 680px;
     width: 95%;
     margin: 0;
+  }
+  .normalMenu {
+    display: none;
+  }
+  .burgerMenu,
+  .mobile {
+    display: unset;
+  }
+  .burgerMenu {
+    list-style: none;
+    background: #4CEEA7;
+    position: fixed;
+    z-index: 10;
+    width: 30%;
+    left: -30%;
+    top: 0;
+    height: 256px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .burgerMenu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    color: #2C2C2C;
+    border-bottom: 1px solid #2C2C2C;
+    display: inline-block;
+    font-size: 2rem;
+    width: 100%;
+    padding: 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .burgerMenu a:hover,
+  .burgerMenu a:focus {
+    background: #3498db;
+  }
+  .fa {
+    font-size: 4rem;
+  }
+  input[type="checkbox"]:checked + .burgerMenu {
+    left: 0;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  label[for="toggle"] {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
   }
   .mainHeader {
     width: 100%;
@@ -1263,7 +1229,8 @@ footer p {
     margin-bottom: 20px;
   }
   .section3 .gridItem {
-    margin-left: 30px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .section3 {
     height: 115rem;
@@ -1304,10 +1271,12 @@ footer p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 105%;
   }
   .section5 img {
+    display: block;
+    margin: 0 auto;
     margin-top: 50px;
-    margin-left: 28vw;
     height: 300px;
     width: 300px;
     -webkit-box-shadow: none;
@@ -1346,5 +1315,205 @@ footer p {
     margin-left: 1vw;
     padding-top: 5rem;
     width: 95vw;
+  }
+  .side {
+    margin-right: 1rem;
+  }
+  .mainPost {
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerBlog {
+    display: unset;
+  }
+  .normalMenu {
+    display: none;
+  }
+  .burgerMenu,
+  .mobile {
+    display: block;
+  }
+  .burgerMenu {
+    list-style: none;
+    background: #4CEEA7;
+    position: fixed;
+    z-index: 10;
+    width: 30%;
+    left: -30%;
+    top: 0;
+    height: 256px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .burgerMenu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    color: #2C2C2C;
+    border-bottom: 1px solid #2C2C2C;
+    display: inline-block;
+    font-size: 2rem;
+    width: 100%;
+    padding: 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .burgerMenu a:hover,
+  .burgerMenu a:focus {
+    background: #3498db;
+  }
+  .fa {
+    font-size: 4rem;
+  }
+  input[type="checkbox"]:checked + .burgerMenu {
+    left: 0;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  label[for="toggle"] {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+  }
+  .side img {
+    display: none;
+  }
+  .postImage {
+    top: 900px;
+    left: 5%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-top: 1.5rem solid #FDFA69;
+    border-bottom: 1.5rem solid #FDFA69;
+    border-left: 1.5rem solid #FDFA69;
+    border-right: 1.5rem solid #FDFA69;
+    width: 90%;
+  }
+  .side {
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+  .sidebar {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-right: 0;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .sidebar li::before {
+    content: "\2022";
+    color: #4CEEA7;
+    font-weight: bold;
+    display: inline-block;
+    width: 2px;
+    margin-right: 1rem;
+  }
+  .containerBlog {
+    display: block;
+    width: 100%;
+  }
+  .mainPost {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    margin-top: 70%;
+    text-align: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .blogPost {
+    width: 100%;
+  }
+  .blogContainer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0 4rem;
+    margin-bottom: 2rem;
+  }
+  .blogContainer img {
+    width: 40vw;
+    height: 40vw;
+    margin: 0;
+    margin-top: 2rem;
+    border: 1rem solid #FDFA69;
+  }
+  .blogContainer p {
+    margin: 2rem 0;
+  }
+  .comment {
+    width: 100%;
+  }
+  .comment input {
+    width: 43vw;
+    margin-left: 11%;
+  }
+  .comment textarea,
+  .comment button {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .normalMenu {
+    display: none;
+  }
+  .burgerMenu,
+  .mobile {
+    display: block;
+  }
+  .burgerMenu {
+    list-style: none;
+    background: #4CEEA7;
+    position: fixed;
+    z-index: 10;
+    width: 30%;
+    left: -30%;
+    top: 0;
+    height: 256px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .burgerMenu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    color: #2C2C2C;
+    border-bottom: 1px solid #2C2C2C;
+    display: inline-block;
+    font-size: 2rem;
+    width: 100%;
+    padding: 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .burgerMenu a:hover,
+  .burgerMenu a:focus {
+    background: #3498db;
+  }
+  .fa {
+    font-size: 4rem;
+  }
+  input[type="checkbox"]:checked + .burgerMenu {
+    left: 0;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  label[for="toggle"] {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+  }
+  .contact h2 {
+    margin-top: 300px;
   }
 }
