@@ -916,6 +916,10 @@ footer p {
   margin-top: 0;
 }
 
+.about ul {
+  margin-top: 0;
+}
+
 @media (max-width: 1345px) {
   .sidebar {
     padding-top: 85%;
