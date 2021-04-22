@@ -647,15 +647,15 @@ h1 {
 .between {
   position: absolute;
   right: 0;
-  top: 200px;
+  top: 65%;
   border-bottom: 50px solid #FDFA69;
   border-left: 50px solid #FDFA69;
   border-top: 50px solid #FDFA69;
 }
 
 .between img {
-  height: 590px;
-  width: 630px;
+  height: 35vw;
+  width: 40vw;
 }
 
 .section1 {
@@ -698,10 +698,11 @@ h1 {
 }
 
 .gridItem1 img {
+  width: 50vw;
   -webkit-box-shadow: 3rem 3rem 0rem 0rem #FDFA69;
           box-shadow: 3rem 3rem 0rem 0rem #FDFA69;
   position: absolute;
-  left: -16%;
+  left: 0;
   top: -10%;
 }
 
@@ -710,10 +711,11 @@ h1 {
 }
 
 .gridItem4 img {
+  width: 50vw;
   -webkit-box-shadow: -3rem 3rem 0rem 0rem #FDFA69;
           box-shadow: -3rem 3rem 0rem 0rem #FDFA69;
   position: absolute;
-  right: -16%;
+  right: 0;
   bottom: -10%;
 }
 
@@ -748,6 +750,7 @@ h1 {
 }
 
 .section2 h4 {
+  width: 100%;
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -811,6 +814,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 30%;
 }
 
 .gridItem8 {
@@ -988,7 +992,7 @@ footer p {
     -webkit-box-shadow: 2rem 2rem 0rem 0rem #FDFA69;
             box-shadow: 2rem 2rem 0rem 0rem #FDFA69;
     position: absolute;
-    left: -16%;
+    left: -10%;
     top: -30%;
   }
   .gridItem3 {
@@ -999,7 +1003,7 @@ footer p {
     -webkit-box-shadow: -2rem 2rem 0rem 0rem #FDFA69;
             box-shadow: -2rem 2rem 0rem 0rem #FDFA69;
     position: absolute;
-    right: -16%;
+    right: -10%;
     top: 160%;
   }
   .gridItem {
@@ -1014,7 +1018,7 @@ footer p {
     gap: 0 100px;
   }
   .section2 h4 {
-    width: 150%;
+    width: 95%;
     margin-top: 20px;
     text-align: left;
   }
@@ -1055,6 +1059,9 @@ footer p {
 @media (max-width: 870px) {
   .section5 {
     height: 75rem;
+  }
+  h1 {
+    font-size: 10rem;
   }
 }
 

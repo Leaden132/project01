@@ -67,15 +67,15 @@ h1 {
 .between {
     position:absolute;
     right:0;
-    top:200px;
+    top:65%;
     border-bottom: 50px solid $canary;
     border-left: 50px solid $canary;
     border-top: 50px solid $canary;
 }
 
 .between img {
-    height:590px;
-    width: 630px;
+    height:35vw;
+    width: 40vw;
 }
 
 .section1 {
@@ -116,9 +116,10 @@ h1 {
 }
 
 .gridItem1 img{
+    width:50vw;
     box-shadow: 3rem 3rem 0rem 0rem $canary;
     position:absolute;
-    left:-16%;
+    left:0;
     top:-10%;
 }
 
@@ -127,9 +128,10 @@ h1 {
 }
 
 .gridItem4 img {
+    width:50vw;
     box-shadow: -3rem 3rem 0rem 0rem $canary;
     position:absolute;
-    right:-16%;
+    right:0;
     bottom:-10%;
 }
 
@@ -163,6 +165,7 @@ h1 {
 }
 
 .section2 h4 {
+    width:100%;
     margin-top:50px;
     margin-bottom:30px;
 }
@@ -225,7 +228,10 @@ h1 {
 
 .section3 .gridItem {
     display:flex;
+    margin-left:30%;
 }
+
+
 
 .gridItem8 {
     margin-bottom:150px;
