@@ -614,9 +614,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .normalMenu a {
@@ -1526,5 +1526,19 @@ footer p {
   }
   .contact h2 {
     margin-top: 300px;
+  }
+  .section6 {
+    height: 1400px;
+  }
+  .section6 img {
+    width: 80vw;
+    height: 80vw;
+    margin: 3rem auto;
+  }
+  .container6 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
