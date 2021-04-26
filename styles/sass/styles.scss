@@ -49,14 +49,12 @@ header {
 
 .normalMenu a:hover {
     border-bottom: 3px solid $seaGreen;
-    
 }
 
 .burgerMenu,
 .mobile {
     display:none;
 }
-
 
 h1 {
     text-align:center;
@@ -67,7 +65,7 @@ h1 {
 .between {
     position:absolute;
     right:0;
-    top:65%;
+    top:33%;
     border-bottom: 50px solid $canary;
     border-left: 50px solid $canary;
     border-top: 50px solid $canary;
