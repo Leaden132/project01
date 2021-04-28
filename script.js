@@ -1,42 +1,56 @@
 
-const formElement = document.querySelector('.comment');
-console.log(formElement);
-const test = document.querySelector('#name');
-console.log(test);
+// const formElement = document.querySelector('.comment');
+// console.log(formElement);
+// const test = document.querySelector('#name');
+// console.log(test);
 
+const app = {};
 
-let time = new Date();
-console.log(time);
-let dd = String(time.getDate()).padStart(2, '0');
-let mm = String(time.getMonth() + 1).padStart(2, '0'); 
-let yyyy = time.getFullYear();
+app.init = function () {
 
-time = mm + '/' + dd + '/' + yyyy;
-console.log(time);
-
-
-formElement.addEventListener('submit', function (e) {
+    const formElement = document.querySelector('.comment');
+    formElement.addEventListener('submit', function (e) {
     e.preventDefault();
+    app.addComment(app.dateConvert());
+    });
+}
 
-    const inputName = document.querySelector('#name');
-    const inputEmail = document.querySelector('#eMail');
-    const inputComment = document.querySelector('#comment');
 
-    const commentHTML = ` <div class="blogContainer">
+//grabbing date in mm/dd/yyyy form
+app.dateConvert = () => {
+    let time = new Date();
+    let dd = String(time.getDate()).padStart(2, '0');
+    let mm = String(time.getMonth() + 1).padStart(2, '0');
+    let yyyy = time.getFullYear();
+    time = mm + '/' + dd + '/' + yyyy;
+    return time;
+}
+
+
+//appending comments on the blog comment section
+app.addComment = (query) => {
+
+        const inputName = document.querySelector('#name');
+        const inputEmail = document.querySelector('#eMail');
+        const inputComment = document.querySelector('#comment');
+
+        const commentHTML = ` <div class="blogContainer">
                         <img src="assets/comment-1.jpg" alt="commenter's profile">
                         <div class="blogContainer2">
-                        <p>${time} by ${inputName.value}</p>
+                        <p>${query} by ${inputName.value}</p>
                         <p>${inputComment.value}</p>
                         </div>
                     </div>`;
 
-    const commentElement = document.querySelector('.additionalPost');
-    const comment = document.createElement('div');
-    comment.innerHTML = commentHTML;
+        const commentElement = document.querySelector('.additionalPost');
+        const comment = document.createElement('div');
+        comment.innerHTML = commentHTML;
 
-    commentElement.appendChild(comment);
+        commentElement.appendChild(comment);
 
-    inputName.value = '';
-    inputEmail.value ='';
-    inputComment.value ='';
-});
+        inputName.value = '';
+        inputEmail.value = '';
+        inputComment.value = '';
+    }
+
+app.init();
