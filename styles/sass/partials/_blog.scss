@@ -37,7 +37,7 @@
     margin-left:27%;
     padding-top:70%;
     background-color:$white;
-    margin-top:40%;
+    margin-top:50%;
     width:71%;
     margin-right:100px;
     
@@ -137,6 +137,7 @@ h5{
     }
 
     .comment textarea {
+        font-size:2rem;
         border: 2px solid $seaGreen;
         background-color:$ice;
     }
@@ -153,6 +154,7 @@ h5{
     }
     
     .short input {
+        font-size:2rem;
         width: 26vw;
     }
     
