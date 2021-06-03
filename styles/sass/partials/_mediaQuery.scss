@@ -118,15 +118,18 @@
 
 //section 3
 
-.section3 .gridItem {
-    margin-left:30px;
+.section3 {
+    height:unset;
 }
 
-.section3 {
-    min-height:850px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    gap: 0 20px;
+.gridContainerTwo{
+    display:flex;
+    flex-direction:column;
+    align-content: space-evenly;
+}
+
+.gridContainerTwo .gridItem{
+    margin-bottom:100px;
 }
 
 .section3 .flexContainer {
@@ -418,7 +421,7 @@ label[for="toggle"] {
 }
 
 .section3 {
-    height:115rem;
+    height:unset;
     min-height:850px;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns:unset;

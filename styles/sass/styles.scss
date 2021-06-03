@@ -69,11 +69,13 @@ h1 {
     border-bottom: 50px solid $canary;
     border-left: 50px solid $canary;
     border-top: 50px solid $canary;
+    
 }
 
 .between img {
     height:35vw;
     width: 40vw;
+    // max-width:900px;
 }
 
 .section1 {
@@ -115,6 +117,7 @@ h1 {
 
 .gridItem1 img{
     width:50vw;
+    max-width:600px;
     box-shadow: 3rem 3rem 0rem 0rem $canary;
     position:absolute;
     left:0;
@@ -127,6 +130,7 @@ h1 {
 
 .gridItem4 img {
     width:50vw;
+    max-width:600px;
     box-shadow: -3rem 3rem 0rem 0rem $canary;
     position:absolute;
     right:0;
@@ -139,6 +143,10 @@ h1 {
 }
 .gridItem3 p {
     text-align:left;
+}
+
+.section2 {
+    min-height:78rem;
 }
 
 .section2 .more {
@@ -172,16 +180,25 @@ h1 {
 
 .section3 {
     background-color:$ice;
+
+    
+    min-height:75rem;
+}
+.gridContainerTwo{
+    padding: 100px 20px;
     display:grid;
-    grid-template-rows: 40% 40%;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
-    min-height:70rem;
+    background-color:$ice;
 }
 
 .section3 .gridItem {
-    margin-left: 250px;
+    display:flex;
+    // margin-left:30%;
 }
+
+
 
 .section3 h4 {
     margin-bottom:25px;
@@ -223,17 +240,6 @@ h1 {
 }
 
 
-
-.section3 .gridItem {
-    display:flex;
-    margin-left:30%;
-}
-
-
-
-.gridItem8 {
-    margin-bottom:150px;
-}
 
 .flexContainer {
     display:flex;
