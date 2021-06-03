@@ -656,8 +656,8 @@ h1 {
 }
 
 .between img {
-  height: 35vw;
-  width: 40vw;
+  width: 100%;
+  max-height: 550px;
 }
 
 .section1 {
