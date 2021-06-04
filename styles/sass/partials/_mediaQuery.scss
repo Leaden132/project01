@@ -236,7 +236,34 @@
 .wrapper {
     max-width: 680px;
     width: 95%;
-    margin:0;
+    margin:0 auto;
+}
+
+.mainHeader .capturedTitle {
+    font-size:6rem;
+}
+
+.icon {
+    display:none !important;
+}
+
+.flexContainer {
+    min-width:unset;
+}
+
+.section3{
+    min-height:1300px !important;
+}
+
+.gridContainerTwo {
+    padding: 10px;
+    min-height:1250px;
+    grid:unset;
+
+}
+
+.gridContainerTwo .gridItem {
+    margin-bottom:200px;
 }
 
 .normalMenu {
@@ -253,8 +280,8 @@
 	background: $seaGreen;
 	position: fixed;
 	z-index: 10;
-	width: 30%; 
-	left: -30%; 
+	width: 40%; 
+	left: -40%; 
 	top: 0;
 	height: 256px;
 	transition: all 0.5s; 
@@ -559,8 +586,8 @@ label[for="toggle"] {
 	background: $seaGreen;
 	position: fixed;
 	z-index: 10;
-	width: 30%; 
-	left: -30%; 
+	width: 40%; 
+	left: -40%; 
 	top: 0;
 	height: 256px;
 	transition: all 0.5s; 

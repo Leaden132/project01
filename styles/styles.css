@@ -692,7 +692,7 @@ h1 {
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 0 200px;
+  gap: 10px 200px;
 }
 
 .gridItem1 {
@@ -1106,7 +1106,27 @@ footer p {
   .wrapper {
     max-width: 680px;
     width: 95%;
-    margin: 0;
+    margin: 0 auto;
+  }
+  .mainHeader .capturedTitle {
+    font-size: 6rem;
+  }
+  .icon {
+    display: none !important;
+  }
+  .flexContainer {
+    min-width: unset;
+  }
+  .section3 {
+    min-height: 1300px !important;
+  }
+  .gridContainerTwo {
+    padding: 10px;
+    min-height: 1250px;
+    grid: unset;
+  }
+  .gridContainerTwo .gridItem {
+    margin-bottom: 200px;
   }
   .normalMenu {
     display: none;
@@ -1120,8 +1140,8 @@ footer p {
     background: #4CEEA7;
     position: fixed;
     z-index: 10;
-    width: 30%;
-    left: -30%;
+    width: 40%;
+    left: -40%;
     top: 0;
     height: 256px;
     -webkit-transition: all 0.5s;
@@ -1362,8 +1382,8 @@ footer p {
     background: #4CEEA7;
     position: fixed;
     z-index: 10;
-    width: 30%;
-    left: -30%;
+    width: 40%;
+    left: -40%;
     top: 0;
     height: 256px;
     -webkit-transition: all 0.5s;
