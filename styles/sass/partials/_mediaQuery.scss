@@ -251,6 +251,17 @@
     min-width:unset;
 }
 
+.container5, .container {
+    display:flex;
+    flex-direction:column;
+    margin-left:0 !important;
+    width:unset !important;
+
+    img {
+        margin-top:0 !important;
+    }
+}
+
 .section3{
     min-height:1300px !important;
 }
@@ -519,8 +530,6 @@ label[for="toggle"] {
     margin:0 auto;
 }
 
-
-
 .container5 {
     display:block;
 }
@@ -730,8 +739,21 @@ label[for="toggle"] {
 
 
 
+//home
 
+.gridContainer {
+    display:flex;
+    flex-direction: column;
+    
+}
 
+.section2 {
+    height:unset;
+}
+
+.gridItem4 img {
+    margin-bottom:5rem;
+}
 
 
 
@@ -751,8 +773,8 @@ label[for="toggle"] {
 	background: $seaGreen;
 	position: fixed;
 	z-index: 10;
-	width: 30%; 
-	left: -30%; 
+	width: 40%; 
+	left: -40%; 
 	top: 0;
 	height: 256px;
 	transition: all 0.5s; 
