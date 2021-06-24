@@ -932,6 +932,10 @@ footer p {
   .sidebar {
     padding-top: 85%;
   }
+  .between img {
+    height: 400px;
+    width: 430px;
+  }
 }
 
 /* Landscape phone to portrait tablet */
@@ -1130,6 +1134,7 @@ footer p {
   }
   .container5 img, .container img {
     margin-top: 0 !important;
+    padding-top: 30px;
   }
   .section3 {
     min-height: 1300px !important;
